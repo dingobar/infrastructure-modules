@@ -43,3 +43,8 @@ variable "db_instance_class" {
   description = "RDS database instance class"
   default     = "db.t2.micro"
 }
+
+variable "db_parameter_group_family" {
+  description = "Postgresql parameter group family compatible with chosen engine version"
+  default     = "postgres10"
+}

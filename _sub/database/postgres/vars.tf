@@ -39,6 +39,11 @@ variable "db_allocated_storage" {
   default     = 20
 }
 
+variable "db_parameter_group_family" {
+  description = "Postgresql parameter group family compatible with chosen engine version"
+  default     = "postgres10"
+}
+
 variable "skip_final_snapshot" {
   description = "Define if the default of creating a backup upon deletion should be skipped. Default is false"
   default     = false
